@@ -22,13 +22,13 @@ public class SignInController {
 		return "SignIn";
 	}
 
-	@RequestMapping(value = "signIn2", method = RequestMethod.POST)
+	@RequestMapping(value = "signIn", method = RequestMethod.POST)
 	public String verifySignIn(
 			@Valid
 			@ModelAttribute("foo") SignInModel2 signInModel,
 			BindingResult result) {
 		if (result.hasErrors()) {
-			return "signIn";
+			return "SignIn";
 		} else {
 			return "redirect:MyVenderTool.html";
 		}

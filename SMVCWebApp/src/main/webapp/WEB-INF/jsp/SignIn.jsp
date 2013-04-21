@@ -29,7 +29,7 @@
 	<center>
 		<h3>Login Page</h3>
 		<br />
-		<form:form commandName="foo" method="POST" action="http://localhost:8080/venderwebapp/signIn2.html">
+		<form:form commandName="foo" method="POST">
 		<form:errors path="*" cssClass="errorblock" element="div" />
 Username:<form:input path="username" />
 			<font color="red"><form:errors path="username" cssClass="error" /></font>
