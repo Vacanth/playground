@@ -5,6 +5,8 @@ import org.springframework.validation.Validator;
 
 import com.webapp.datamodel.SignInModel;
 
+//TODO This validator is not properly configured. 
+//Control wont come to this validator with current implementation.
 public class SignInValidator implements Validator {
 
 	public boolean supports(Class clazz) {
