@@ -5,6 +5,11 @@ playground
 
 
 Script Used for column space creation:
+
+=========================================================
+
+
+
 Use ZipDB;
 create column family ZipLookUp with key_validation_class = 'UTF8Type' and comparator = 'UTF8Type' and column_metadata=[{column_name:ZIP_CODE, validation_class: UTF8Type, index_type:KEYS},
 {column_name:CITY, validation_class: UTF8Type}
