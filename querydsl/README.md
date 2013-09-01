@@ -1,4 +1,3 @@
-
 FOR 5000 entries of 'account' table
 
 %%%%%%%%% QueryDSL USING HIBERNATE TESTS %%%%%%%
