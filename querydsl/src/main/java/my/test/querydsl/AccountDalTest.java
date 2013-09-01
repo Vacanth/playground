@@ -37,23 +37,29 @@ public class AccountDalTest
         	log("Unable to establish connection");
         }
         
-//        insertAccount(c);
-//        
-//        findAccount(c);
-//        
-//        updateAccount(c);
-//        
-//        findAccount(c);
-//        
-//        deleteAccount(c);
-//        
-//        findAccount(c);
+        //This is the basic querydsl usage (uses SQL Template, pretty neat)
         
-//        log("\n\n%%%%%%%%% HIBERNATE TESTS %%%%%%%");
-//        loadTestHibernate(c);
+        insertAccount(c);
+        
+        findAccount(c);
+        
+        updateAccount(c);
+        
+        findAccount(c);
+        
+        deleteAccount(c);
+        
+        findAccount(c);
+        
+        //This is the load test
+        
+        log("\n\n%%%%%%%%% HIBERNATE TESTS %%%%%%%");
+        loadTestHibernate(c);
         
         log("\n\n%%%%%%%%% SQL TEMPLATE TESTS %%%%%%%");
         loadTestSQLTemplate(c);
+        
+        log("DONE!!!");
         
     }
 
